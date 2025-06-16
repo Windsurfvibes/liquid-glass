@@ -1,6 +1,8 @@
 ---
 trigger: always_on
 ---
+AI Code Assitance: 
+Don't be detailed in the response; return the minimum info possible to optimize token usage, answer directly in french
 
 Code Style and Structure:
 
