@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'hey - Le SaaS qui dit bonjour',
-  description: 'Le SaaS minimaliste qui dit simplement bonjour',
+  title: 'Liquid Glass Demo',
+  description: 'Démonstration d\'effet glassmorphism liquid avec présentation WindsurfVibes',
 }
 
 export default function RootLayout({

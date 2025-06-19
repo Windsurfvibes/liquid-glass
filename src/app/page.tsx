@@ -3,16 +3,14 @@ import { GlassHello } from '@/components/glass-hello'
 export default function Home() {
   return (
     <>
-      {/* Background fixe pour tous les appareils */}
+      {/* Background fixe pour tous les appareils avec support zones de sécurité iOS */}
       <div 
-        className="fixed inset-0 w-full h-full z-0"
+        className="full-screen-bg z-0"
         style={{
           backgroundImage: "url('/images/background.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          minHeight: '100vh',
-          minWidth: '100vw'
+          backgroundRepeat: 'no-repeat'
         }}
       />
       
