@@ -14,9 +14,9 @@ export default function Home() {
         }}
       />
       
-      <main className="min-h-[300vh] w-full relative z-10">
+      <main className="w-full relative z-10" style={{ minHeight: '300svh' }}>
         {/* Slide 1: Le Problème */}
-        <section className="min-h-screen w-full flex items-center justify-center px-4 sm:px-6">
+        <section className="w-full flex items-center justify-center px-4 sm:px-6" style={{ height: '100svh' }}>
           <div className="glass-container">
             <div className="glass-filter" />
             <div className="glass-overlay" />
@@ -45,7 +45,7 @@ export default function Home() {
         </section>
 
         {/* Slide 2: La Solution */}
-        <section className="min-h-screen w-full flex items-center justify-center px-4 sm:px-6">
+        <section className="w-full flex items-center justify-center px-4 sm:px-6" style={{ height: '100svh' }}>
           <div className="glass-container">
             <div className="glass-filter" />
             <div className="glass-overlay" />
@@ -78,7 +78,7 @@ export default function Home() {
         </section>
 
         {/* Slide 3: L'Offre */}
-        <section className="min-h-screen w-full flex items-center justify-center px-4 sm:px-6">
+        <section className="w-full flex items-center justify-center px-4 sm:px-6" style={{ height: '100svh' }}>
           <div className="glass-container">
             <div className="glass-filter" />
             <div className="glass-overlay" />

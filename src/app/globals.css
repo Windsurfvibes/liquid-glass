@@ -39,10 +39,13 @@
 
 html {
   height: 100%;
-  /* Support pour les zones de sécurité iOS */
-  height: 100vh;
-  height: -webkit-fill-available;
+  /* Support pour les zones de sécurité iOS avec 100svh */
+  height: 100vh; /* fallback pour navigateurs anciens */
+  height: 100svh; /* small viewport height pour iOS */
   overflow-x: hidden;
+  /* Désactive le scroll bounce iOS */
+  overscroll-behavior-y: contain;
+  touch-action: manipulation;
 }
 
 body {
@@ -50,8 +53,8 @@ body {
   overflow-x: hidden;
   background: transparent;
   height: 100%;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  min-height: 100vh; /* fallback */
+  min-height: 100svh; /* small viewport height pour iOS */
   /* Supprime les marges par défaut sur mobile */
   margin: 0;
   padding: 0;
@@ -59,6 +62,9 @@ body {
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
   color: rgb(var(--foreground));
+  /* Désactive le scroll bounce iOS */
+  overscroll-behavior-y: contain;
+  touch-action: manipulation;
 }
 
 /* Classe utilitaire pour déborder sur les zones de sécurité */
@@ -69,8 +75,8 @@ body {
   right: 0;
   bottom: 0;
   width: 100vw;
-  height: 100vh;
-  height: -webkit-fill-available;
+  height: 100vh; /* fallback */
+  height: 100svh; /* small viewport height pour iOS */
   /* Déborde sur les zones de sécurité */
   margin-top: calc(-1 * env(safe-area-inset-top));
   margin-bottom: calc(-1 * env(safe-area-inset-bottom));
