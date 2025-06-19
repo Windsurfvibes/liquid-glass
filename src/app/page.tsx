@@ -5,16 +5,18 @@ export default function Home() {
     <>
       {/* Background fixe pour tous les appareils */}
       <div 
-        className="fixed inset-0 w-full h-full -z-10"
+        className="fixed inset-0 w-full h-full z-0"
         style={{
           backgroundImage: "url('/images/background.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
+          backgroundRepeat: 'no-repeat',
+          minHeight: '100vh',
+          minWidth: '100vw'
         }}
       />
       
-      <main className="min-h-[300vh] w-full relative">
+      <main className="min-h-[300vh] w-full relative z-10">
         {/* Slide 1: Le Problème */}
         <section className="min-h-screen w-full flex items-center justify-center px-4 sm:px-6">
           <div className="glass-container">
